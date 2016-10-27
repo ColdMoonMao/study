@@ -142,11 +142,38 @@ body,
  }
  .header .list li{
  	margin: 10px;
+ 	position: relative;
  }
  .header .list a{
  	text-decoration: none;
  	color: #e66f69;
  }
+ .header .list div[class*=ico]{
+ 	width: 21px;
+ 	height: 21px;
+ 	-webkit-background-size: 100%;
+ 	background-size: 100%;
+ 	background-position: center;
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	position: absolute;
+ 	right: 0;
+ }
+  .header .list .ico-home{
+ 	background-image: url(" ./images/home.png");
+  }
+    .header .list .ico-service{
+ 	background-image: url(" ./images/support-on.png");
+  }
+    .header .list .ico-work{
+ 	background-image: url(" ./images/glass.png");
+  }
+    .header .list .ico-test{
+ 	background-image: url(" ./images/message.png");
+  }
+    .header .list .ico-contact{
+ 	background-image: url(" ./images/question.png");
+  }
  .menu:hover .ico, .menu:hover .ico::before, .menu:hover  .ico::after{
  	border: 1px solid  #e66f69;
  }
